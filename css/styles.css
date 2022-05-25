@@ -354,11 +354,33 @@ body {
 }
   
 .services-item {
+  position: relative;
+
   margin-right: 30px;
 }
 
 .services-item:last-child {
   margin-right: 0;
+}
+/* description */
+
+.services-description {
+  position: absolute;
+  bottom: 0;
+  padding: 27px;
+  right: 0;
+  left: 0;
+
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primary-white-color);
+
+  background: rgba(47, 48, 58, 0.8);
 }
 
 /* Team */
@@ -434,7 +456,7 @@ body {
   border-radius: 50%;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
   transition-duration: 250ms;
-  transition-property: background-color;
+  transition-property: background-color, fill;
 
 }
 .social-item:not(:last-child) {
@@ -445,7 +467,6 @@ body {
 .social-element:hover,
 .social-element:focus {
   background-color: var(--accent-color);
-  /* border-radius: 50%; */
   fill: var(--primary-white-color)
 }
 
@@ -479,7 +500,7 @@ body {
 
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
   transition-duration: 250ms;
-  transition-property: fill, solid;
+  transition-property: fill, border;
 }
 .clients-item:not(:last-child) {
   margin-right: 30px;
